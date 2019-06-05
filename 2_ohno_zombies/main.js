@@ -2,15 +2,20 @@
 
 $(document).ready(init);
 function init(){
-
+    $('#roll-dice-button').on("click", randomNumDice);
 
 }
     
-var randomNum = null;
+
 function randomNumDice(){ //add button click handler to call this function to generate num
-    //$(event.currentTarget).
-    randomNum = Math.floor(Math.random() *6) +1;
-    return randomNum;
+    var playerDie = $('#player-die');
+    var zombieDie = $('#zombie-die');
+    var playerVal = Math.floor(Math.random() *6) +1;
+    var zombieVal = Math.floor(Math.random() *6) +1;
+    var playerDieImg = "assets/dice-images/dice" +playerVal+ ".png";
+    var zombieDieImg = "assets/dice-images/zdice" +zombieVal+ ".png";
+    playerDie.css('background-image', 'url(' +playerDieImg+ ')');
+    zombieDie.css('background-image', 'url(' +zombieDieImg+ ')');
 }
 var a = 'The trips over a stray appendage and hits the ground with a thud. Move four spaces';
 var b = 'You decide its time to take care of this business slo-mo Kung-fu style! First you leg sweep the zombie then you hit him with a palm thrust to the sternum. Move six spaces.';
