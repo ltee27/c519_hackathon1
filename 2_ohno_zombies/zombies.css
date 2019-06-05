@@ -84,3 +84,30 @@ img {
     left: 45%;
     position: absolute;
 }
+.dice {
+    /*float: left;*/
+    /*border: #999 1px solid;*/
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 10vw;
+    display: inline-block;
+    position: fixed;
+    /*left: 15%;*/
+}
+#player-die {
+    background-image: url("assets/dice-images/dice1.png");
+
+}
+#zombie-die {
+    background-image: url("assets/dice-images/zdice1.png");
+}
+#roll-dice-button {
+    position: relative;
+    left: 10%;
+    /*position: absolute;*/
+    /*text-align: center;*/
+}
