@@ -23,12 +23,14 @@ var h = 'The zombie grabs your arm and you let out a piercing scream. It\'s no u
 
 
 
-var zombieCard = [a,b,c,d,e,f,g,h];
+var zombieCardPile = [a,b,c,d,e,f,g,h];
 
 function randomZombieCard(array) {
-  var randomCard = Math.floor(Math.random() * zombieCard.length);
-  console.log(zombieCard[randomCard]);
+  var randomCard = Math.floor(Math.random() * zombieCardPile.length);
+  console.log(zombieCardPile[randomCard]);
   return randomCard;
 }
 
-randomZombieCard(zombieCard);
+function ZombieCard(){//add clickhandler to call this function which returns a zombieCard
+    return randomZombieCard(zombieCardPile);
+}
