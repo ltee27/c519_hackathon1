@@ -107,4 +107,6 @@ img {
     width:  10%;
     position: relative;
     left: 3%;
+    z-index:1;
+
 }

@@ -7,7 +7,7 @@ function init(){
 }
     
 
-function randomNumDice(){ //add button click handler to call this function to generate num
+function randomNumDice(){ 
     var playerDie = $('#player-die');
     var zombieDie = $('#zombie-die');
     var playerVal = Math.floor(Math.random() *6) +1;
