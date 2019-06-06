@@ -5,7 +5,6 @@ function init(){
     $('#roll-dice-button').on("click", randomNumDice);
 
 }
-    
 
 function randomNumDice(){ //add button click handler to call this function to generate num
     var playerDie = $('#player-die');
@@ -16,7 +15,29 @@ function randomNumDice(){ //add button click handler to call this function to ge
     var zombieDieImg = "assets/dice-images/zdice" +zombieVal+ ".png";
     playerDie.css('background-image', 'url(' +playerDieImg+ ')');
     zombieDie.css('background-image', 'url(' +zombieDieImg+ ')');
+    var position = $('.player-zombie').position();
+    switch (zombieVal) {
+        case 1:
+            $('.player-zombie').css('left', position.left + 20 + 'px');
+            break;
+        case 2:
+            $('.player-zombie').css('left', position.left + 40 + 'px');
+            break;
+        case 3:
+            $('.player-zombie').css('left', position.left + 60 + 'px');
+            break;
+        case 4:
+            $('.player-zombie').css('left', position.left + 80 + 'px');
+            break;
+        case 5:
+            $('.player-zombie').css('left', position.left + 100 + 'px');
+            break;
+        case 6:
+            $('.player-zombie').css('left', position.left + 120 + 'px');
+            break;
+    }
 }
+
 var a = 'The trips over a stray appendage and hits the ground with a thud. Move four spaces';
 var b = 'You decide its time to take care of this business slo-mo Kung-fu style! First you leg sweep the zombie then you hit him with a palm thrust to the sternum. Move six spaces.';
 var c = 'The zombie reaches for you, but you duck beneath its arms and crawl between its legs. Move two spaces.';
@@ -36,6 +57,6 @@ function randomZombieCard(array) {
   return randomCard;
 }
 
-function ZombieCard(){//add clickhandler to call this function which returns a zombieCard
+function ZombieCard(){ //add clickhandler to call this function which returns a zombieCard
     return randomZombieCard(zombieCardPile);
 }
