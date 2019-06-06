@@ -1,6 +1,7 @@
 body {
     background-image: url("assets/images/zombiegrass.png");
     height: 100vh;
+    width: 100vw;
     margin: 0;
 }
 
@@ -73,11 +74,11 @@ img {
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 60px;
-    width: 40px;
+    height: 8%;
+    width: 3%;
     display: inline-block;
     position: relative;
-    left: 8%;
+    left: 34%;
     margin-top: 12%;
 }
 #player-die {
@@ -88,17 +89,29 @@ img {
     background-image: url("assets/dice-images/zdice1.png");
 }
 #roll-dice-button {
-    height: 10%;
+    height: 3%;
     width:  10%;
     position: relative;
-    left: -3%;
+    left: 23.3%;
     z-index: 2;
+    margin-top: 32%;
 }
+
+.player-zombie {
+    height: 7%;
+    width: 6%;
+    bottom: 40%;
+    left: 10%;
+    position: absolute;
+    z-index: 1;
+}
+
+
 
 .space1 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 9%;
     position: absolute;
 }
@@ -106,98 +119,98 @@ img {
 .space2 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 19%;
     position: absolute;
 }
 .space3 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 29%;
     position: absolute;
 }
 .space4 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 39%;
     position: absolute;
 }
 .space5 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 49%;
     position: absolute;
 }
 .space6 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 59%;
     position: absolute;
 }
 .space7 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 69%;
     position: absolute;
 }
 .space8 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 79%;
     position: absolute;
 }
 .space9 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 89%;
     position: absolute;
 }
 .space10 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 99%;
     position: absolute;
 }
 .space11 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 109%;
     position: absolute;
 }
 .space12 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 119%;
     position: absolute;
 }
 .space13 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 129%;
     position: absolute;
 }
 .space14 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 139%;
     position: absolute;
 }
 .space15 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 149%;
     position: absolute;
 }
@@ -205,7 +218,7 @@ img {
 .space16 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 159%;
     position: absolute;
 }
@@ -213,7 +226,7 @@ img {
 .space17 {
     height: 6%;
     width: 9%;
-    bottom: 31%;
+    bottom: 40%;
     left: 169%;
     position: absolute;
 }
