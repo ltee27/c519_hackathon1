@@ -5,7 +5,6 @@ function init(){
     $('#roll-dice-button').on("click", randomNumDice);
 
 }
-
 function randomNumDice(){
     var playerDie = $('#player-die');
     var zombieDie = $('#zombie-die');
