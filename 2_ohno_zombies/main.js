@@ -16,7 +16,7 @@ function randomNumDice(){ //add button click handler to call this function to ge
     playerDie.css('background-image', 'url(' +playerDieImg+ ')');
     zombieDie.css('background-image', 'url(' +zombieDieImg+ ')');
     var position = $('.player-zombie').position();
-    switch (zombieVal) {
+    switch (zombieVal, playerVal) {
         case 1:
             $('.player-zombie').css('left', position.left + 20 + 'px');
             break;
