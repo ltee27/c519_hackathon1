@@ -35,6 +35,7 @@ img {
     right: 91%;
     position: absolute;
 }
+
 .store2 {
     height: 20%;
     width: 15%;
@@ -81,13 +82,16 @@ img {
     left: 45%;
     margin-top: 12%;
 }
+
 #player-die {
     background-image: url("assets/dice-images/dice1.png");
 
 }
+
 #zombie-die {
     background-image: url("assets/dice-images/zdice1.png");
 }
+
 #roll-dice-button {
     height: 3%;
     width: 6%;
@@ -111,13 +115,13 @@ img {
     height: 7%;
     width: 6%;
     bottom: 40%;
-    left: 10%;
+    left: 80%;
     position: absolute;
     z-index: 1;
     transition-duration: 1s;
 }
 
-.space1 {
+[data-spacenum="1"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
@@ -125,98 +129,111 @@ img {
     position: absolute;
 }
 
-.space2 {
+[data-spacenum="2"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 19%;
     position: absolute;
 }
-.space3 {
+
+[data-spacenum="3"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 29%;
     position: absolute;
 }
-.space4 {
+
+[data-spacenum="4"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 39%;
     position: absolute;
 }
-.space5 {
+
+[data-spacenum="5"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 49%;
     position: absolute;
 }
-.space6 {
+
+[data-spacenum="6"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 59%;
     position: absolute;
 }
-.space7 {
+
+[data-spacenum="7"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 69%;
     position: absolute;
 }
-.space8 {
+
+[data-spacenum="8"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 79%;
     position: absolute;
 }
-.space9 {
+
+[data-spacenum="9"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 89%;
     position: absolute;
 }
-.space10 {
+
+[data-spacenum="10"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 99%;
     position: absolute;
 }
-.space11 {
+
+[data-spacenum="11"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 109%;
     position: absolute;
 }
-.space12 {
+
+[data-spacenum="12"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 119%;
     position: absolute;
 }
-.space13 {
+
+[data-spacenum="13"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 129%;
     position: absolute;
 }
-.space14 {
+
+[data-spacenum="14"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
     left: 139%;
     position: absolute;
 }
-.space15 {
+
+[data-spacenum="15"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
@@ -224,7 +241,7 @@ img {
     position: absolute;
 }
 
-.space16 {
+[data-spacenum="16"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
@@ -232,7 +249,7 @@ img {
     position: absolute;
 }
 
-.space17 {
+[data-spacenum="17"] {
     height: 6%;
     width: 9%;
     bottom: 40%;
@@ -240,7 +257,7 @@ img {
     position: absolute;
 }
 
-.space18 {
+[data-spacenum="18"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
@@ -248,98 +265,111 @@ img {
     position: absolute;
 }
 
-.space19 {
+[data-spacenum="19"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 19%;
     position: absolute;
 }
-.space20 {
+
+[data-spacenum="20"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 29%;
     position: absolute;
 }
-.space21 {
+
+[data-spacenum="21"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 39%;
     position: absolute;
 }
-.space22 {
+
+[data-spacenum="22"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 49%;
     position: absolute;
 }
-.space23 {
+
+[data-spacenum="23"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 59%;
     position: absolute;
 }
-.space24 {
+
+[data-spacenum="24"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 69%;
     position: absolute;
 }
-.space25 {
+
+[data-spacenum="25"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 79%;
     position: absolute;
 }
-.space26 {
+
+[data-spacenum="26"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 89%;
     position: absolute;
 }
-.space27 {
+
+[data-spacenum="27"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 99%;
     position: absolute;
 }
-.space28 {
+
+[data-spacenum="28"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 109%;
     position: absolute;
 }
-.space29 {
+
+[data-spacenum="29"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 119%;
     position: absolute;
 }
-.space30 {
+
+[data-spacenum="30"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 129%;
     position: absolute;
 }
-.space31 {
+
+[data-spacenum="31"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
     left: 139%;
     position: absolute;
 }
-.space32 {
+
+[data-spacenum="32"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
@@ -347,7 +377,7 @@ img {
     position: absolute;
 }
 
-.space33 {
+[data-spacenum="33"] {
     height: 6%;
     width: 9%;
     bottom: -62%;
@@ -355,7 +385,7 @@ img {
     position: absolute;
 }
 
-.space34 {
+[data-spacenum="34"] {
      height: 6%;
      width: 9%;
      bottom: -62%;
@@ -363,7 +393,7 @@ img {
      position: absolute;
  }
 
-.space35 {
+[data-spacenum="35"] {
     height: 6%;
     width: 9%;
     bottom: -50%;
@@ -372,7 +402,7 @@ img {
     transform: rotate(90deg);
 }
 
-.space36 {
+[data-spacenum="36"] {
      height: 6%;
      width: 9%;
      bottom: -31%;
@@ -381,7 +411,7 @@ img {
      transform: rotate(90deg);
  }
 
-.space37 {
+[data-spacenum="37"] {
     height: 6%;
     width: 9%;
     bottom: -12%;
@@ -390,7 +420,7 @@ img {
     transform: rotate(90deg);
 }
 
-.space38 {
+[data-spacenum="38"] {
     height: 6%;
     width: 9%;
     bottom: 7%;
@@ -399,7 +429,7 @@ img {
     transform: rotate(90deg);
 }
 
-.space39 {
+[data-spacenum="39"] {
     height: 6%;
     width: 9%;
     bottom: 26%;
@@ -408,7 +438,7 @@ img {
     transform: rotate(90deg);
 }
 
-.space40 {
+[data-spacenum="40"] {
     height: 6%;
     width: 9%;
     bottom: -50%;
@@ -417,7 +447,7 @@ img {
     transform: rotate(90deg);
 }
 
-.space41 {
+[data-spacenum="41"] {
     height: 6%;
     width: 9%;
     bottom: -31%;
@@ -426,7 +456,7 @@ img {
     transform: rotate(90deg);
 }
 
-.space42 {
+[data-spacenum="42"] {
     height: 6%;
     width: 9%;
     bottom: -12%;
@@ -435,7 +465,7 @@ img {
     transform: rotate(90deg);
 }
 
-.space43 {
+[data-spacenum="43"] {
     height: 6%;
     width: 9%;
     bottom: 7%;
@@ -444,7 +474,7 @@ img {
     transform: rotate(90deg);
 }
 
-.space44 {
+[data-spacenum="44"] {
     height: 6%;
     width: 9%;
     bottom: 26%;
