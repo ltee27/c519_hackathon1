@@ -15,7 +15,7 @@ class randomNumDice {
         this.zombieVal = 1;
         this.playerVal = 1;
         this.positionZombie = $('.player-zombie').position();
-        this.positionHuman = $('.player-zombie').position();
+        this.positionHuman = $('.player-human').position();
         this.rollBothDice = this.rollBothDice.bind(this);
     }
 
@@ -30,33 +30,33 @@ class randomNumDice {
         this.zombieDie.css('background-image', 'url(' + this.zombieDieImg + ')');
         switch (this.zombieVal) {
             case 1:
-                $('.player-zombie').css('left', this.positionZombie.left + 76);
+                $('.player-zombie').css('left', this.positionZombie.left += 76);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
             case 2:
-                $('.player-zombie').css('left', this.positionZombie.left + 152);
+                $('.player-zombie').css('left', this.positionZombie.left += 152);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
             case 3:
-                $('.player-zombie').css('left', this.positionZombie.left + 228);
+                $('.player-zombie').css('left', this.positionZombie.left += 228);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
             case 4:
-                $('.player-zombie').css('left', this.positionZombie.left + 304);
+                $('.player-zombie').css('left', this.positionZombie.left += 304);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
             case 5:
-                $('.player-zombie').css('left', this.positionZombie.left + 380);
+                $('.player-zombie').css('left', this.positionZombie.left += 380);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
             case 6:
-                $('.player-zombie').css('left', this.positionZombie.left + 456);
+                $('.player-zombie').css('left', this.positionZombie.left += 456);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
         }
-        if (this.positionZombie.left > 991.437572479248) {
-            $('.player-zombie').css('left', 991.4);
-            // $('.player-zombie').css('top', position.top + 100);
+        if (this.positionZombie.left > 1220) {
+            $('.player-zombie').css('left', 1220);
+             $('.player-zombie').css('top',this.positionZombie.top += 100);
         }
     }
     playerRoll() {
@@ -65,23 +65,32 @@ class randomNumDice {
         this.playerDie.css('background-image', 'url(' + this.playerDieImg + ')');
         switch (this.playerVal) {
             case 1:
-                $('.player-human').css('left', this.positionHuman.left + 76);
+                $('.player-human').css('left', this.positionHuman.left += 76);
                 break;
             case 2:
-                $('.player-human').css('left', this.positionHuman.left + 152);
+                $('.player-human').css('left', this.positionHuman.left += 152);
                 break;
             case 3:
-                $('.player-human').css('left', this.positionHuman.left + 228);
+                $('.player-human').css('left', this.positionHuman.left += 228);
                 break;
             case 4:
-                $('.player-human').css('left', this.positionHuman.left + 304);
+                $('.player-human').css('left', this.positionHuman.left += 304);
                 break;
             case 5:
-                $('.player-human').css('left', this.positionHuman.left + 380);
+                $('.player-human').css('left', this.positionHuman.left += 380);
                 break;
             case 6:
-                $('.player-human').css('left', this.positionHuman.left + 456);
+                $('.player-human').css('left', this.positionHuman.left += 456);
                 break;
+        }
+           if (this.positionHuman.left > 1280) {
+            $('.player-human').css('left', 1280);
+            console.log('human position: ', this.postionHuman)
+            if (this.positionHuman.left==1250 && this.positionHuman.top==107.078125) {
+            $('.player-human').css('top',this.positionHuman.top += 100);
+            }
+          //  if (this.positionHuman.left > 1220 && ,this.positionHuman.top) {
+
         }
     }
 }
