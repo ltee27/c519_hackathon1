@@ -5,8 +5,7 @@ function init(){
     $('#roll-dice-button').on("click", randomNumDice);
 
 }
-
-function randomNumDice(){ 
+function randomNumDice(){
     var playerDie = $('#player-die');
     var zombieDie = $('#zombie-die');
     var playerVal = Math.floor(Math.random() *6) +1;
@@ -15,25 +14,57 @@ function randomNumDice(){
     var zombieDieImg = "assets/dice-images/zdice" +zombieVal+ ".png";
     playerDie.css('background-image', 'url(' +playerDieImg+ ')');
     zombieDie.css('background-image', 'url(' +zombieDieImg+ ')');
-    var position = $('.player-zombie').position();
-    switch (zombieVal, playerVal) {
+    var positionZombie = $('.player-zombie').position();
+    var positionHuman = $('.player-zombie').position();
+    switch (zombieVal) {
         case 1:
-            $('.player-zombie').css('left', position.left + 20 + 'px');
+            $('.player-zombie').css('left', positionZombie.left + 76);
+            console.log("coordinates: ", $('.player-zombie').position());
             break;
         case 2:
-            $('.player-zombie').css('left', position.left + 40 + 'px');
+            $('.player-zombie').css('left', positionZombie.left + 152);
+            console.log("coordinates: ", $('.player-zombie').position());
             break;
         case 3:
-            $('.player-zombie').css('left', position.left + 60 + 'px');
+            $('.player-zombie').css('left', positionZombie.left + 228);
+            console.log("coordinates: ", $('.player-zombie').position());
             break;
         case 4:
-            $('.player-zombie').css('left', position.left + 80 + 'px');
+            $('.player-zombie').css('left', positionZombie.left + 304);
+            console.log("coordinates: ", $('.player-zombie').position());
             break;
         case 5:
-            $('.player-zombie').css('left', position.left + 100 + 'px');
+            $('.player-zombie').css('left', positionZombie.left + 380);
+            console.log("coordinates: ", $('.player-zombie').position());
             break;
         case 6:
-            $('.player-zombie').css('left', position.left + 120 + 'px');
+            $('.player-zombie').css('left', positionZombie.left + 456);
+            console.log("coordinates: ", $('.player-zombie').position());
+            break;
+    }
+    if(positionZombie.left > 991.437572479248){
+        $('.player-zombie').css('left', 991.4);
+        // $('.player-zombie').css('top', position.top + 100);
+    }
+
+    switch (playerVal) {
+        case 1:
+            $('.player-human').css('left', positionHuman.left + 20 + 'px');
+            break;
+        case 2:
+            $('.player-human').css('left', positionHuman.left + 40 + 'px');
+            break;
+        case 3:
+            $('.player-human').css('left', positionHuman.left + 60 + 'px');
+            break;
+        case 4:
+            $('.player-human').css('left', positionHuman.left + 80 + 'px');
+            break;
+        case 5:
+            $('.player-human').css('left', positionHuman.left + 100 + 'px');
+            break;
+        case 6:
+            $('.player-human').css('left', positionHuman.left + 120 + 'px');
             break;
     }
 }

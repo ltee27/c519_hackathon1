@@ -70,7 +70,7 @@ img {
 }
 
 .dice {
-    padding: 18px;
+    padding: 3px;
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ img {
     width: 3%;
     display: inline-block;
     position: relative;
-    left: 34%;
+    left: 45%;
     margin-top: 12%;
 }
 #player-die {
@@ -90,11 +90,11 @@ img {
 }
 #roll-dice-button {
     height: 3%;
-    width:  10%;
+    width: 6%;
     position: relative;
-    left: 23.3%;
+    left: 38%;
     z-index: 2;
-    margin-top: 32%;
+    margin-top: -1%;
 }
 
 .player-zombie {
@@ -104,9 +104,18 @@ img {
     left: 10%;
     position: absolute;
     z-index: 1;
+    transition-duration: 1s;
 }
 
-
+.player-human {
+    height: 7%;
+    width: 6%;
+    bottom: 40%;
+    left: 10%;
+    position: absolute;
+    z-index: 1;
+    transition-duration: 1s;
+}
 
 .space1 {
     height: 6%;
@@ -229,4 +238,217 @@ img {
     bottom: 40%;
     left: 169%;
     position: absolute;
+}
+
+.space18 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 9%;
+    position: absolute;
+}
+
+.space19 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 19%;
+    position: absolute;
+}
+.space20 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 29%;
+    position: absolute;
+}
+.space21 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 39%;
+    position: absolute;
+}
+.space22 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 49%;
+    position: absolute;
+}
+.space23 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 59%;
+    position: absolute;
+}
+.space24 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 69%;
+    position: absolute;
+}
+.space25 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 79%;
+    position: absolute;
+}
+.space26 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 89%;
+    position: absolute;
+}
+.space27 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 99%;
+    position: absolute;
+}
+.space28 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 109%;
+    position: absolute;
+}
+.space29 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 119%;
+    position: absolute;
+}
+.space30 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 129%;
+    position: absolute;
+}
+.space31 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 139%;
+    position: absolute;
+}
+.space32 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 149%;
+    position: absolute;
+}
+
+.space33 {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 159%;
+    position: absolute;
+}
+
+.space34 {
+     height: 6%;
+     width: 9%;
+     bottom: -62%;
+     left: 169%;
+     position: absolute;
+ }
+
+.space35 {
+    height: 6%;
+    width: 9%;
+    bottom: -50%;
+    left: 177%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.space36 {
+     height: 6%;
+     width: 9%;
+     bottom: -31%;
+     left: 177%;
+     position: absolute;
+     transform: rotate(90deg);
+ }
+
+.space37 {
+    height: 6%;
+    width: 9%;
+    bottom: -12%;
+    left: 177%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.space38 {
+    height: 6%;
+    width: 9%;
+    bottom: 7%;
+    left: 177%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.space39 {
+    height: 6%;
+    width: 9%;
+    bottom: 26%;
+    left: 177%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.space40 {
+    height: 6%;
+    width: 9%;
+    bottom: -50%;
+    left: 3%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.space41 {
+    height: 6%;
+    width: 9%;
+    bottom: -31%;
+    left: 3%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.space42 {
+    height: 6%;
+    width: 9%;
+    bottom: -12%;
+    left: 3%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.space43 {
+    height: 6%;
+    width: 9%;
+    bottom: 7%;
+    left: 3%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.space44 {
+    height: 6%;
+    width: 9%;
+    bottom: 26%;
+    left: 3%;
+    position: absolute;
+    transform: rotate(90deg);
 }
