@@ -102,21 +102,15 @@ img {
 }
 
 .player-zombie {
-    height: 7%;
-    width: 6%;
-    bottom: 40%;
-    left: 10%;
-    position: absolute;
+    height: 50px;
+    width: 50px;
     z-index: 1;
     transition-duration: 1s;
 }
 
 .player-human {
-    height: 7%;
-    width: 6%;
-    bottom: 40%;
-    left: 80%;
-    position: absolute;
+    height: 50px;
+    width: 50px;
     z-index: 1;
     transition-duration: 1s;
 }

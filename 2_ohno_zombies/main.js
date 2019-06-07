@@ -10,79 +10,101 @@ function init(){
 }
 class randomNumDice {
     constructor() {
+        this.dice = {
+            players: $('#player-die'),
+            zombies: $('#zombie-die'),
+        };
+        this.squares = $('.space');
         this.playerDie = $('#player-die');
         this.zombieDie = $('#zombie-die');
-        this.zombieVal = 1;
-        this.playerVal = 1;
+        this.gamePieces = {
+            players: [
+                { dom: $('.player-human'), position: 8},
+            ],
+            zombies: [
+                { dom: $('.player-zombie'), position: 1}
+            ]
+        }
+        this.currentPlayer = 0;
+        this.currentZombie = 0;
         this.positionZombie = $('.player-zombie').position();
-        this.positionHuman = $('.player-zombie').position();
+        this.positionHuman = $('.player-human').position();
         this.rollBothDice = this.rollBothDice.bind(this);
+
+        this.moveGamePiece(this.gamePieces.players[0]);
+        this.moveGamePiece(this.gamePieces.zombies[0]);
+        
     }
 
     rollBothDice() {
-        this.zombieRoll();
-        this.playerRoll();
+//        this.zombieRoll();
+//        this.playerRoll();
+        this.pieceRoll('players');
+        this.pieceRoll('zombies');
     }
-
     zombieRoll() {
-        this.zombieVal = Math.floor(Math.random() * 6) + 1;
+        this.zombieVal = this.diceRoll('zombies');
         this.zombieDieImg = "assets/dice-images/zdice" + this.zombieVal + ".png";
         this.zombieDie.css('background-image', 'url(' + this.zombieDieImg + ')');
         switch (this.zombieVal) {
             case 1:
-                $('.player-zombie').css('left', this.positionZombie.left + 76);
+                $('.player-zombie').css('left', this.positionZombie.left += 76);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
             case 2:
-                $('.player-zombie').css('left', this.positionZombie.left + 152);
+                $('.player-zombie').css('left', this.positionZombie.left += 152);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
             case 3:
-                $('.player-zombie').css('left', this.positionZombie.left + 228);
+                $('.player-zombie').css('left', this.positionZombie.left += 228);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
             case 4:
-                $('.player-zombie').css('left', this.positionZombie.left + 304);
+                $('.player-zombie').css('left', this.positionZombie.left += 304);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
             case 5:
-                $('.player-zombie').css('left', this.positionZombie.left + 380);
+                $('.player-zombie').css('left', this.positionZombie.left += 380);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
             case 6:
-                $('.player-zombie').css('left', this.positionZombie.left + 456);
+                $('.player-zombie').css('left', this.positionZombie.left += 456);
                 console.log("coordinates: ", $('.player-zombie').position());
                 break;
         }
-        if (this.positionZombie.left > 991.437572479248) {
-            $('.player-zombie').css('left', 991.4);
-            // $('.player-zombie').css('top', position.top + 100);
+        if (this.positionZombie.left > 1220) {
+            $('.player-zombie').css('left', 1220);
+             $('.player-zombie').css('top',this.positionZombie.top += 100);
         }
+        
     }
-    playerRoll() {
-        this.playerVal = Math.floor(Math.random() * 6) + 1;
-        this.playerDieImg = "assets/dice-images/dice" + this.playerVal + ".png";
-        this.playerDie.css('background-image', 'url(' + this.playerDieImg + ')');
-        switch (this.playerVal) {
-            case 1:
-                $('.player-human').css('left', this.positionHuman.left + 76);
-                break;
-            case 2:
-                $('.player-human').css('left', this.positionHuman.left + 152);
-                break;
-            case 3:
-                $('.player-human').css('left', this.positionHuman.left + 228);
-                break;
-            case 4:
-                $('.player-human').css('left', this.positionHuman.left + 304);
-                break;
-            case 5:
-                $('.player-human').css('left', this.positionHuman.left + 380);
-                break;
-            case 6:
-                $('.player-human').css('left', this.positionHuman.left + 456);
-                break;
+    diceRoll(type) {
+        var diceType = (type === 'zombies') ? 'z' : ''; 
+        var roll = Math.floor(Math.random() * 6) + 1;
+        var dieImage = "assets/dice-images/"+diceType+"dice" + roll + ".png";
+        this.dice[type].css('background-image', 'url(' + this.playerDieImg + ")");
+        return roll;
+                           
+    }
+    moveGamePiece(piece) {
+        var maxLength = this.squares.length;
+        var position = piece.position;
+        var dom = piece.dom;
+        if(position >= maxLength){
+            position = position - maxLength;
         }
+        var destinationSquare = this.squares[position];
+        $(destinationSquare).append(dom);
+        
+    }
+    pieceRoll(type) {
+        var currentPiece = this.gamePieces[type][this.currentPlayer];
+        var currentPosition = currentPiece.position;
+        currentPiece.position += this.diceRoll(type);
+        this.moveGamePiece( currentPiece );
+        
+        return;
+        
     }
 }
 
