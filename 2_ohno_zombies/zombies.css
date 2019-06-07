@@ -1,7 +1,7 @@
 body {
-    border: 1px solid black;
     background-image: url("assets/images/zombiegrass.png");
     height: 100vh;
+    width: 100vw;
     margin: 0;
 }
 
@@ -30,84 +30,625 @@ img {
 
 .store1 {
     height: 20%;
-    width: 35%;
-    bottom: 46%;
-    right: 72%;
+    width: 15%;
+    bottom: 48%;
+    right: 91%;
     position: absolute;
 }
+
 .store2 {
     height: 20%;
-    width: 35%;
-    bottom: 46%;
-    left: 159%;
-    top: 34%;
+    width: 15%;
+    bottom: 43%;
+    right: -94%;
+    top: 32%;
     position: absolute;
 }
 
 .store3 {
     height: 20%;
-    width: 35%;
-    bottom: 79%;
+    width: 15%;
+    bottom: 81%;
     right: -94%;
-    top: 159%;
+    top: 156%;
     position: absolute;
 }
 
 .store4 {
     height: 20%;
-    width: 35%;
-    bottom: -79%;
+    width: 15%;
+    bottom: -76%;
     left: -6%;
     position: absolute;
 }
 
 .shack {
     height: 25%;
-    width: 30%;
+    width: 20%;
     position: absolute;
-    left: 78%;
+    left: 85%;
     bottom: -10%;
 }
 
-.space1 {
-    height: 5%;
-    width: 15%;
-    bottom: 31%;
-    left: 28%;
-    position: absolute;
-}
-
-.space2 {
-    height: 5%;
-    width: 15%;
-    bottom: 31%;
-    left: 45%;
-    position: absolute;
-}
 .dice {
-    /*float: left;*/
-    /*border: #999 1px solid;*/
-    padding: 10px;
+    padding: 3px;
     text-align: center;
-    margin: 5px;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 10vh;
-    width: 10vw;
+    height: 8%;
+    width: 3%;
     display: inline-block;
-    position: fixed;
-    /*left: 15%;*/
+    position: relative;
+    left: 45%;
+    margin-top: 12%;
 }
+
 #player-die {
     background-image: url("assets/dice-images/dice1.png");
 
 }
+
 #zombie-die {
     background-image: url("assets/dice-images/zdice1.png");
 }
+
 #roll-dice-button {
+    height: 3%;
+    width: 6%;
     position: relative;
-    left: 10%;
-    /*position: absolute;*/
-    /*text-align: center;*/
+    left: 38%;
+    z-index: 2;
+    margin-top: -1%;
+}
+
+.player-zombie {
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+    transition-duration: 1s;
+}
+
+.player-human {
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    transition-duration: 1s;
+}
+
+[data-spacenum="1"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 9%;
+    position: absolute;
+}
+
+[data-spacenum="2"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 19%;
+    position: absolute;
+}
+
+[data-spacenum="3"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 29%;
+    position: absolute;
+}
+
+[data-spacenum="4"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 39%;
+    position: absolute;
+}
+
+[data-spacenum="5"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 49%;
+    position: absolute;
+}
+
+[data-spacenum="6"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 59%;
+    position: absolute;
+}
+
+[data-spacenum="7"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 69%;
+    position: absolute;
+}
+
+[data-spacenum="8"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 79%;
+    position: absolute;
+}
+
+[data-spacenum="9"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 89%;
+    position: absolute;
+}
+
+[data-spacenum="10"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 99%;
+    position: absolute;
+}
+
+[data-spacenum="11"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 109%;
+    position: absolute;
+}
+
+[data-spacenum="12"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 119%;
+    position: absolute;
+}
+
+[data-spacenum="13"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 129%;
+    position: absolute;
+}
+
+[data-spacenum="14"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 139%;
+    position: absolute;
+}
+
+[data-spacenum="15"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 149%;
+    position: absolute;
+}
+
+[data-spacenum="16"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 159%;
+    position: absolute;
+}
+
+[data-spacenum="17"] {
+    height: 6%;
+    width: 9%;
+    bottom: 40%;
+    left: 169%;
+    position: absolute;
+}
+
+[data-spacenum="18"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 9%;
+    position: absolute;
+}
+
+[data-spacenum="19"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 19%;
+    position: absolute;
+}
+
+[data-spacenum="20"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 29%;
+    position: absolute;
+}
+
+[data-spacenum="21"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 39%;
+    position: absolute;
+}
+
+[data-spacenum="22"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 49%;
+    position: absolute;
+}
+
+[data-spacenum="23"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 59%;
+    position: absolute;
+}
+
+[data-spacenum="24"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 69%;
+    position: absolute;
+}
+
+[data-spacenum="25"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 79%;
+    position: absolute;
+}
+
+[data-spacenum="26"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 89%;
+    position: absolute;
+}
+
+[data-spacenum="27"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 99%;
+    position: absolute;
+}
+
+[data-spacenum="28"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 109%;
+    position: absolute;
+}
+
+[data-spacenum="29"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 119%;
+    position: absolute;
+}
+
+[data-spacenum="30"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 129%;
+    position: absolute;
+}
+
+[data-spacenum="31"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 139%;
+    position: absolute;
+}
+
+[data-spacenum="32"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 149%;
+    position: absolute;
+}
+
+[data-spacenum="33"] {
+    height: 6%;
+    width: 9%;
+    bottom: -62%;
+    left: 159%;
+    position: absolute;
+}
+
+[data-spacenum="34"] {
+     height: 6%;
+     width: 9%;
+     bottom: -62%;
+     left: 169%;
+     position: absolute;
+ }
+
+[data-spacenum="35"] {
+    height: 6%;
+    width: 9%;
+    bottom: -50%;
+    left: 177%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+[data-spacenum="36"] {
+     height: 6%;
+     width: 9%;
+     bottom: -31%;
+     left: 177%;
+     position: absolute;
+     transform: rotate(90deg);
+ }
+
+[data-spacenum="37"] {
+    height: 6%;
+    width: 9%;
+    bottom: -12%;
+    left: 177%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+[data-spacenum="38"] {
+    height: 6%;
+    width: 9%;
+    bottom: 7%;
+    left: 177%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+[data-spacenum="39"] {
+    height: 6%;
+    width: 9%;
+    bottom: 26%;
+    left: 177%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+[data-spacenum="40"] {
+    height: 6%;
+    width: 9%;
+    bottom: -50%;
+    left: 3%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+[data-spacenum="41"] {
+    height: 6%;
+    width: 9%;
+    bottom: -31%;
+    left: 3%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+[data-spacenum="42"] {
+    height: 6%;
+    width: 9%;
+    bottom: -12%;
+    left: 3%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+[data-spacenum="43"] {
+    height: 6%;
+    width: 9%;
+    bottom: 7%;
+    left: 3%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+[data-spacenum="44"] {
+     height: 6%;
+     width: 9%;
+     bottom: 26%;
+     left: 3%;
+     position: absolute;
+     transform: rotate(90deg);
+ }
+
+[data-spacenum="45"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 11%;
+    position: absolute;
+}
+
+[data-spacenum="46"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 22%;
+    position: absolute;
+}
+
+[data-spacenum="47"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 32%;
+    position: absolute;
+}
+
+[data-spacenum="48"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 42%;
+    position: absolute;
+}
+
+[data-spacenum="49"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 52%;
+    position: absolute;
+}
+
+[data-spacenum="50"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 63%;
+    position: absolute;
+}
+
+[data-spacenum="51"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 74%;
+    position: absolute;
+}
+
+[data-spacenum="52"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 11%;
+    position: absolute;
+}
+
+[data-spacenum="53"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 22%;
+    position: absolute;
+}
+
+[data-spacenum="54"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 32%;
+    position: absolute;
+}
+
+[data-spacenum="55"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 42%;
+    position: absolute;
+}
+
+[data-spacenum="56"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 52%;
+    position: absolute;
+}
+
+[data-spacenum="57"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 63%;
+    position: absolute;
+}
+
+[data-spacenum="58"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 168%;
+    position: absolute;
+}
+
+[data-spacenum="59"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 158%;
+    position: absolute;
+}
+
+[data-spacenum="60"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 106%;
+    position: absolute;
+}
+
+[data-spacenum="61"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 117%;
+    position: absolute;
+}
+
+[data-spacenum="62"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left:128%;
+    position: absolute;
+}
+
+[data-spacenum="63"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 138%;
+    position: absolute;
+}
+
+[data-spacenum="64"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 148%;
+    position: absolute;
+}
+
+[data-spacenum="65"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 158%;
+    position: absolute;
+}
+
+[data-spacenum="66"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 74%;
+    position: absolute;
 }
