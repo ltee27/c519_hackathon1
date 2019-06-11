@@ -5,7 +5,7 @@ $(document).ready(init);
 var roll;
 
 function init(){
-    roll = new randomNumDice();
+    roll = new OhNoZombies();
     $('#roll-dice-button').on("click", roll.rollBothDice);
 
 }
