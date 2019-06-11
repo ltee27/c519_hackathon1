@@ -105,14 +105,14 @@ img {
     height: 50px;
     width: 50px;
     z-index: 1;
-    transition-duration: 1s;
+    transition-duration: 2s;
 }
 
 .player-human {
     height: 65px;
     width: 65px;
     z-index: 1;
-    transition-duration: 1s;
+    transition-duration: 2s;
 }
 
 [data-spacenum="1"] {
@@ -651,4 +651,17 @@ img {
     bottom: -10%;
     left: 74%;
     position: absolute;
+  zombie-collision-modal
+    transform: rotate(90deg);
+}
+.zombie-modal {
+    height: 35%;
+    width: 50%;
+    left: 25%;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: hotpink;
+
 }
