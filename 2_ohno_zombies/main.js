@@ -76,15 +76,15 @@ class randomNumDice {
             $('.player-zombie').css('left', 1220);
              $('.player-zombie').css('top',this.positionZombie.top += 100);
         }
-        
+        debugger;
     }
     diceRoll(type) {
-        var diceType = (type === 'zombies') ? 'z' : ''; 
+        var diceType = (type === 'zombies') ? 'z' : '';
         var roll = Math.floor(Math.random() * 6) + 1;
         var dieImage = "assets/dice-images/"+diceType+"dice" + roll + ".png";
-        this.dice[type].css('background-image', 'url(' + this.playerDieImg + ")");
+        this.dice[type].css('background-image', 'url(' + dieImage + ")");
         return roll;
-                           
+
     }
     moveGamePiece(piece) {
         var maxLength = this.squares.length;
