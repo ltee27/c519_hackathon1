@@ -21,11 +21,13 @@ class OhNoZombies {
         this.zombieDie = $('#zombie-die');
         this.gamePieces = {
             players: [
-                { dom: $('.player-human'), position: 8},
-            ],
+                { dom: $('.player-human'),
+                  position: 8},
+                ],
             zombies: [
-                { dom: $('.player-zombie'), position: 1}
-            ]
+                { dom: $('.player-zombie'), 
+                  position: 1}
+                ]
         };
         this.currentPlayer = 0;
         this.currentZombie = 0;
@@ -34,7 +36,8 @@ class OhNoZombies {
         this.rollBothDice = this.rollBothDice.bind(this);
 
         this.moveGamePiece(this.gamePieces.players[0]);
-        this.moveGamePiece(this.gamePieces.zombies[0]);        
+        this.moveGamePiece(this.gamePieces.zombies[0]); 
+        
     }
 
     rollBothDice() {
@@ -53,30 +56,56 @@ class OhNoZombies {
     moveGamePiece(piece) {
         var maxLength = this.squares.length;
         var position = piece.position;
+        console.log('position: ', piece.dom[0]);
         var dom = piece.dom;
         if(position >= maxLength){
             position = position - maxLength;
         }
         var destinationSquare = this.squares[position];
         $(destinationSquare).append(dom);
-
+        console.log('piece', piece.position);
+        if (piece.position === 6 || piece.position === 12 || piece.position === 22 ||piece.position === 32 ||piece.position === 42 ||piece.position === 62 ) {
+           var weapon = $('#weapon-collision');
+            $(weapon).css('display', 'block');
+            }
+         window.onclick = function(event) {
+               if (event.target === weapon) {
+              weapon.style.display = "none";
+               }
+    }
     }
     pieceRoll(type) {
         var currentPiece = this.gamePieces[type][this.currentPlayer];
+        var humanConditional = this.gamePieces.players[this.currentPlayer];
+        console.log('this is humanConditional: ', humanConditional);
+        console.log('this is current piece: ', currentPiece);
         var currentPosition = currentPiece.position;
         currentPiece.position += this.diceRoll(type);
         this.moveGamePiece( currentPiece );
-        
         return;
         
     }
     zombieCollision() {
-        var zombieModal = document.getElementById('zombie-collision');
+        var zombieModal = $('#zombie-collision');
         if(roll.gamePieces.players[0].position === roll.gamePieces.zombies[0].position) {
-            console.log("they are in the same location");            
+           console.log("they are in the same location");            
            zombieModal.style.display = "block";
         }
     }
-
+    
+    weaponCheck() {
+       var test = roll.gamePieces.players[0].position;
+        console.log('this is a test: ', test);
+//        var maxLength = this.squares.length;
+//        var position = piece.position;
+//        console.log('position: ', position)
+//        var dom = piece.dom;
+//        if(position >= maxLength){
+//            position = position - maxLength;
+//        }
+//        var destinationSquare = this.squares[position];
+//        $(destinationSquare).append(dom);
+//        console.log('piece', piece);   
+    }
 }
 
