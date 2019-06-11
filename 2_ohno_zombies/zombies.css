@@ -651,7 +651,6 @@ img {
     bottom: -10%;
     left: 74%;
     position: absolute;
-  zombie-collision-modal
     transform: rotate(90deg);
 }
 .zombie-modal {
