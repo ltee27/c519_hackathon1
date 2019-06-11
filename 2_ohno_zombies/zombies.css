@@ -102,8 +102,8 @@ img {
 }
 
 .player-zombie {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     z-index: 1;
     transition-duration: 2s;
 }
@@ -469,11 +469,189 @@ img {
 }
 
 [data-spacenum="44"] {
+     height: 6%;
+     width: 9%;
+     bottom: 26%;
+     left: 3%;
+     position: absolute;
+     transform: rotate(90deg);
+ }
+
+[data-spacenum="45"] {
     height: 6%;
     width: 9%;
-    bottom: 26%;
-    left: 3%;
+    bottom: -10%;
+    left: 11%;
     position: absolute;
+}
+
+[data-spacenum="46"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 22%;
+    position: absolute;
+}
+
+[data-spacenum="47"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 32%;
+    position: absolute;
+}
+
+[data-spacenum="48"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 42%;
+    position: absolute;
+}
+
+[data-spacenum="49"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 52%;
+    position: absolute;
+}
+
+[data-spacenum="50"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 63%;
+    position: absolute;
+}
+
+[data-spacenum="51"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 74%;
+    position: absolute;
+}
+
+[data-spacenum="52"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 11%;
+    position: absolute;
+}
+
+[data-spacenum="53"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 22%;
+    position: absolute;
+}
+
+[data-spacenum="54"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 32%;
+    position: absolute;
+}
+
+[data-spacenum="55"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 42%;
+    position: absolute;
+}
+
+[data-spacenum="56"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 52%;
+    position: absolute;
+}
+
+[data-spacenum="57"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 63%;
+    position: absolute;
+}
+
+[data-spacenum="58"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 168%;
+    position: absolute;
+}
+
+[data-spacenum="59"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 158%;
+    position: absolute;
+}
+
+[data-spacenum="60"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 106%;
+    position: absolute;
+}
+
+[data-spacenum="61"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 117%;
+    position: absolute;
+}
+
+[data-spacenum="62"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left:128%;
+    position: absolute;
+}
+
+[data-spacenum="63"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 138%;
+    position: absolute;
+}
+
+[data-spacenum="64"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 148%;
+    position: absolute;
+}
+
+[data-spacenum="65"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 158%;
+    position: absolute;
+}
+
+[data-spacenum="66"] {
+    height: 6%;
+    width: 9%;
+    bottom: -10%;
+    left: 74%;
+    position: absolute;
+  zombie-collision-modal
     transform: rotate(90deg);
 }
 .zombie-modal {
@@ -485,4 +663,5 @@ img {
     z-index: 1;
     display: none;
     background-color: hotpink;
+
 }
