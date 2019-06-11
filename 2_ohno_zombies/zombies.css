@@ -18,6 +18,14 @@ img {
     height: 150%;
 }
 
+.title {
+    width: 60%;
+    height: 100%;
+    left: 23%;
+    bottom: 90%;
+    position: relative;
+}
+
 .boardContainer {
     height: 50%;
     width: 50%;
@@ -78,7 +86,7 @@ img {
     width: 3%;
     display: inline-block;
     position: relative;
-    left: 45%;
+    left: 46%;
     margin-top: 12%;
 }
 
@@ -95,7 +103,7 @@ img {
     height: 3%;
     width: 6%;
     position: relative;
-    left: 38%;
+    left: 39%;
     z-index: 2;
     margin-top: -1%;
     cursor: pointer;
@@ -104,15 +112,46 @@ img {
 .player-zombie {
     height: 50px;
     width: 50px;
-    z-index: 1;
     transition-duration: 2s;
+    position: absolute;
+    bottom: 15px;
+}
+
+.player-zombie2 {
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+    left: 140%;
+    bottom: -5%;
+    position: absolute;
+    z-index: 3;
+}
+.player-zombie3 {
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+    position: absolute;
+    bottom: 15px;
+    top: 145%;
+    left: 120%;
+    z-index: 3;
+}
+.player-zombie4 {
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+    position: absolute;
+    top: 145%;
+    left: 20%;
+    z-index: 3;
 }
 
 .player-human {
     height: 65px;
     width: 65px;
-    z-index: 1;
     transition-duration: 2s;
+    position: absolute;
+    bottom: 15px;
 }
 
 [data-spacenum="1"] {
@@ -651,7 +690,6 @@ img {
     bottom: -10%;
     left: 74%;
     position: absolute;
-    transform: rotate(90deg);
 }
 .zombie-modal {
     position: absolute;

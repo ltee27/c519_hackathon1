@@ -7,6 +7,8 @@ var roll;
 function init(){
     roll = new OhNoZombies();
     $('#roll-dice-button').on("click", roll.rollBothDice);
+    $('#roll-dice-button').on("click", 'audio').play();
+
 }
 class OhNoZombies {
     constructor() {
@@ -39,7 +41,7 @@ class OhNoZombies {
     }
 
     rollBothDice() {
-
+        this.zombieCollision();
         this.pieceRoll('players');
         this.pieceRoll('zombies');
     }
