@@ -12,11 +12,14 @@
 </head>
 <body>
 <header>
-    <img src="http://pngimg.com/uploads/zombie/zombie_PNG64.png">
+    <img src="http://pngimg.com/uploads/zombie/zombie_PNG64.png" class="zombies">
+    <img src="assets/images/header.png" class="title">
 </header>
 <div class="dice" id="player-die"></div>
 <div class="dice" id="zombie-die"></div>
-<button id="roll-dice-button">Roll Dice</button>
+<button id="roll-dice-button">Roll Dice
+    <audio src="Homer - Come on, you little horse!.wav"></audio>
+</button>
 <main>
     <div class="boardContainer">
         <div class="shack">
@@ -34,11 +37,20 @@
         <div class="store4">
             <img src="http://clipart-library.com/images/pT58gBeac.png" alt="store bottom right">
         </div>
-        <div class="player-human">
-            <img src="http://pluspng.com/img-png/free-gifs-and-png-the-simpsons-animated-gif-320.gif" alt="player human">
-        </div>
         <div class="player-zombie">
             <img src="https://i.pinimg.com/originals/f7/c7/86/f7c7868c2f8c087dbba08c348df5272e.gif" alt="player zombie">
+        </div>
+        <div class="player-zombie2">
+            <img src="https://i.pinimg.com/originals/f7/c7/86/f7c7868c2f8c087dbba08c348df5272e.gif" alt="player zombie">
+        </div>
+        <div class="player-zombie3">
+            <img src="https://i.pinimg.com/originals/f7/c7/86/f7c7868c2f8c087dbba08c348df5272e.gif" alt="player zombie">
+        </div>
+        <div class="player-zombie4">
+            <img src="https://i.pinimg.com/originals/f7/c7/86/f7c7868c2f8c087dbba08c348df5272e.gif" alt="player zombie">
+        </div>
+        <div class="player-human">
+            <img src="http://pluspng.com/img-png/free-gifs-and-png-the-simpsons-animated-gif-320.gif" alt="player human">
         </div>
         <div class="space">
             <div class="space" data-spacenum="1">
@@ -193,9 +205,10 @@
             </div>
             <div class="space" data-spacenum="44">
                 <img src="assets/images/stone.jpg" alt="space stone image">
-            </div>            <div class="space" data-spacenum="19">
-            <img src="assets/images/stone.jpg" alt="space stone image">
-        </div>
+            </div>
+            <div class="space" data-spacenum="19">
+                <img src="assets/images/stone.jpg" alt="space stone image">
+            </div>
             <div class="space" data-spacenum="58">
                 <img src="assets/images/stone.jpg" alt="space stone image">
             </div>
@@ -220,8 +233,8 @@
             <div class="space" data-spacenum="66">
                 <img src="assets/images/stone.jpg" alt="space stone image">
             </div>
+        </div>
     </div>
-      </div>
 </main>
 </body>
 <div class="zombie-modal" id="zombie-collision">
