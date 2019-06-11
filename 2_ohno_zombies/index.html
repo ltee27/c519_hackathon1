@@ -240,4 +240,29 @@
 <div class="zombie-modal" id="zombie-collision">
     <div id="collision-content">Oh no! Zombie!</div>
 </div>
+<div class="open-modal" id="open-modal">
+    <div class='open-modal-header'>Oh No...ZOMBIES!</div>
+    <div class='game-instructions'>Click the 'Roll Dice' button</div>
+    <div class='game-instructions'>The white die moves the human player and the green die moves the zombie</div>
+    <div class='game-instructions'>If you land on the same square as a zombie, a Zombie Card will be pulled!</div>
+    <div class='game-instructions'>Some spaces will equip you with a weapong to fight off the zombies.</div>
+    <div class='game-instructions'>Your goal is to get batteries from a corner store, and make it to the center safely!</div>
+    <div class='game-instructions'></div>
+    <div class='game-instructions'></div>    
+    <div id='player-button'>1 Player</div>
+    <div id='player-button'>2 Players</div>
+    <div id='player-button'>3 Players</div>
+    <div id='player-button'>4 Players</div>
+
+</div>
+<script>
+        var theModal = document.getElementById('open-modal');
+        var playerButtons = document.getElementById('player-button');
+        window.onclick = function(event) {
+            if (event.target === theModal || event.target === playerButtons) {
+                theModal.style.display = "none";
+            }
+        }
+        
+    </script>
 </html>
