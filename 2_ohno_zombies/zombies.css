@@ -8,10 +8,10 @@ body {
 header {
     height: 15%;
     width: 100%;
-    position: absolute;
-    text-align: center;
-    bottom: 85%;
+    position: relative;
+    alignment: center;
     background-repeat: no-repeat;
+    right: 4%;
 }
 
 img {
@@ -65,9 +65,9 @@ img {
 .shack {
     height: 25%;
     width: 20%;
-    position: absolute;
-    left: 85%;
-    bottom: -10%;
+    position: relative;
+    left: 84%;
+    top: 85%;
 }
 
 .dice {
@@ -102,15 +102,15 @@ img {
 }
 
 .player-zombie {
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     z-index: 1;
     transition-duration: 2s;
 }
 
 .player-human {
-    height: 50px;
-    width: 50px;
+    height: 65px;
+    width: 65px;
     z-index: 1;
     transition-duration: 2s;
 }
