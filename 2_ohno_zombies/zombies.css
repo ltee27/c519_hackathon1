@@ -707,9 +707,9 @@ img {
 }
 .weapon-modal {
     position: absolute;
-    top: 50%;
+    top: 74%;
     left: 50%;
-    z-index: 3;
+    z-index: 2;
     background-color: darkgreen;
     color: white;
     padding: 35px 45px;
@@ -783,4 +783,5 @@ img {
     font-size: 3vh;
     border-radius: 10px;
     border: 2px solid red;
+    text-align: center;
 }

@@ -18,7 +18,6 @@
 <div class="dice" id="player-die"></div>
 <div class="dice" id="zombie-die"></div>
 <button id="roll-dice-button">Roll Dice
-    <audio src="Homer - Come on, you little horse!.wav"></audio>
 </button>
 <main>
     <div class="boardContainer">
@@ -239,7 +238,7 @@
 </body>
 <div class="zombie-modal" id="zombie-collision">
     <span class="close">&times;</span>
-    <div id="collision-content">Oh no! Zombie! You Died</div>
+    <div id="collision-content">Game Over! You Have Been Zombified!</div>
 </div>
     <div class="weapon-modal" id="weapon-collision">
     <span class="close">&times;</span>
@@ -250,7 +249,7 @@
     <div class='game-instructions'>Click the 'Roll Dice' button</div>
     <div class='game-instructions'>The white die moves the human player and the green die moves the zombie</div>
     <div class='game-instructions'>If you land on the same square as a zombie, a Zombie Card will be pulled!</div>
-    <div class='game-instructions'>Some spaces will equip you with a weapong to fight off the zombies.</div>
+    <div class='game-instructions'>Some spaces will equip you with a weapon to fight off the zombies.</div>
     <div class='game-instructions'>Your goal is to get batteries from a corner store, and make it to the center safely!</div>
     <div class='game-instructions'></div>
     <div class='game-instructions'></div>    
@@ -258,16 +257,5 @@
     <div id='player-button'>2 Players</div>
     <div id='player-button'>3 Players</div>
     <div id='player-button'>4 Players</div>
-
 </div>
-<script>
-        var theModal = document.getElementById('open-modal');
-        var playerButtons = document.getElementById('player-button');
-        window.onclick = function(event) {
-            if (event.target === theModal || event.target === playerButtons) {
-                theModal.style.display = "none";
-            }
-        }
-        
-    </script>
 </html>
